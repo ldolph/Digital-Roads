@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0:
+	background-color: white;
+}
+
+li {
+	font-family: "Cardo";
+	font-weight: normal;
+	font-size: 24px;
+	color: black;
+	text-decoration: none;
+}
+
+a {
+	list-style: none;
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 20px 3%;
+	background-color: rgb(193, 194, 215);
+}
+
+.header {
+	display: flex;
+  	justify-content: flex-end;
+  	align-items: center;
+  	padding: 20px 3%;
+  	background-color: rgb(193, 194, 215);
+
+}
+
+h1 {
+	font-family: "Cardo";
+	font-weight: normal;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	margin: 20px 10px;
+}
+
+p {
+	font-family: "Cardo";
+	font-weight: normal;
+	color: black;
+	text-decoration: none;
+}
+
+.logo {
+	margin-right: auto;
+}
+
+.navigationBarLinks {
+	list-style: none;
+}
+
+.navigationBarLinks:visited {
+	color: black;
+}
+
+.navigationBarLinks li{
+	display: inline-block;
+	padding: 9px 25px;
+	background-color: rgb(193, 194, 215);
+	border: none;
+	border-radius: 50px;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+.navigationBarLinks li a {
+	transition:all 0.3s ease 0;
+	text-decoration: none;
+}
+
+.navigationBarLinks li:hover{
+	background-color: rgb(211, 212, 227);
+}
+
+/* Journal and Game Section Specific Code */
+
+.comingSoon {
+	margin: 10% 36%;
+	width: 10px
+}
+
+.comingSoon:hover {
+	cursor: url("Teens Take on Covid Hackathon/cursor.png"), default;
+}
+
+/* About Section Specific Code */
+.mission {
+	font-family: "Cardo";
+	font-weight: normal;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	margin: 30px 10%;
+	text-align: center;
+}
+
+table {
+  height: 40%;
+  left: 10%;
+  margin: 20px auto;
+  overflow-y: scroll;
+  position: static;
+  width: 35%;
+}
+
+tr {
+  background: white;
+  margin-bottom: 5px;
+}
+
+td {
+  font-family: "Cardo";
+  font-weight: normal;
+  font-size: 20px;
+  padding: 5px 50px;
+  text-align: center;
+}
+
+/* Adventure Section Specific Code */
+
+.destinations {
+	display: inline-block;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 80px;
+	padding: 20px 10px;
+}
+
+.zoo:hover {
+	opacity: 60%;
+}
+
+.museum:hover {
+	opacity: 60%;
+}
+
+.store:hover {
+	opacity: 60%;
+}
+
+/* Game Section Specific Code */
+
+.games {
+	display: inline-block;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 25%;
+	padding: 20px 10px;
+}
+
+.pictionary:hover {
+	opacity: 60%;
+}
+
+.trivia:hover {
+	opacity: 60%;
+}
+
+/* Homepage Specific Code */
+
+.nextPages{
+	display: inline-block;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 80px;
+	padding: 20px 10px;
+}
+
+.adventurePage:hover {
+	opacity: 60%;
+}
+
+.gamePage:hover {
+	opacity: 60%;
+}
+
+.journalPage:hover {
+	opacity: 60%;
+}
+
+.spinny-wrapper{
+    margin: 10px 525px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+}
+
+.spinny-words{
+    display: inline-block;
+    min-width: 350px;
+    text-align: center;
+}
+
+.spinny-words span{
+    position: absolute;
+    font-weight: bold;
+    opacity: 0;    
+    animation: rotateWord 18s linear infinite 0s;
+}
+
+.spinny-words span:nth-child(2) { 
+    animation-delay: 3s; 
+}
+
+.spinny-words span:nth-child(3) { 
+    animation-delay: 6s; 
+}
+
+.spinny-words span:nth-child(4) { 
+    animation-delay: 9s; 
+}
+
+.spinny-words span:nth-child(5) { 
+    animation-delay: 12s; 
+}
+
+.spinny-words span:nth-child(6) { 
+    animation-delay: 15s; 
+}
+
+@keyframes rotateWord {
+  0%   { opacity: 0; }
+  2%   { opacity: 0; transform: translateY(-30px); }
+  5%   { opacity: 1; transform: translateY(0px);}
+  17%  { opacity: 1; transform: translateY(0px); }
+  20%  { opacity: 0; transform: translateY(30px); }
+  80%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Zoo Page Specific Code */
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 3%;
+  background-color: rgb(193, 194, 215);
+}
+
+.Container {
+  height: 100%;
+}
+
+.Container:before {
+  content: '';
+  height: 100%;
+  float: left;
+}
+
+.Content {
+  position: relative;
+  z-index: 1;
+}
+
+.Content:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.Wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Wrapper>div {
+  height: 100%;
+}
+
+.LeftContent {
+  background-color: white;
+  overflow: auto;
+  width: 60%
+}
+
+.zooMuseums {
+  display: inline-block;
+  padding: 30px 25px;
+}
+
+.zooMuseums:hover {
+  opacity: 60%;
+}
+
+#map_canvas {
+  height: 100%;
+  width: 100%;
+  overflow: hidden
+ }
+
+.RightContent {
+  background-color: white;
+  float: right;
+  margin-left: none;
+  width: 570px;
+}
+
